@@ -15,7 +15,7 @@ f, Pxx = signal.welch(y, fs=100)
 # Plot the original signal, filtered signal, and power spectral density
 import matplotlib.pyplot as plt
 fig, (ax0, ax1, ax2) = plt.subplots(nrows=3, figsize=(6, 10))
-ax0.plot(t, x)
+
 ax0.set_ylabel('Original signal')
 ax1.plot(t, y)
 ax1.set_ylabel('Filtered signal')
